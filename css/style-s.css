@@ -1,9 +1,9 @@
 /*####版面設計####*/
 
 body {
-	margin :24px 10px;
+	margin :10px 4px;
 	font-family: calibri light, '微軟正黑體', sans-serif;
-    background-color: #F8F8FF
+    background-color:   #F5F5F5
 }
 
 
@@ -12,12 +12,12 @@ body {
 /*L-size bigger than980px; m-size 640~979px; s-size smaller than 639px*/
 
 #container{
-	width: 960px;
+	width: 639px;
 	margin: auto;
 }
 
 header {
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	overflow: hidden;
 }
 
@@ -28,17 +28,17 @@ header {
 /* overflow:hidden 將多的區塊隱藏，版面比較好看 */
 
 #Toppost{
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 	overflow: hidden;
 }
 
 #oldnews {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     overflow: hidden;
 }
 
 footer {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 
@@ -66,7 +66,7 @@ footer {
 
 #site img{
 	vertical-align: bottom;
-	width:332px;
+	width:250px;
 }
 
 
@@ -80,9 +80,9 @@ footer {
 
 nav{
 	float: right;
-	font-size: 15px;
+	font-size: 7px;
     font-family: 'Roboto', sans-serif;
-    padding-top: 30px;
+    padding-top: 15px;
 }
 
 nav ul {
@@ -119,10 +119,10 @@ nav li {
 nav li a {
     display: block;
     float: left;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
     text-decoration: none;
-    border-bottom: solid 3px transparent;
+    border-bottom: solid 1px transparent;
     color: #000000;
 }
 
@@ -145,8 +145,7 @@ nav li a:hover {
 #Toppost img {
     float: left;
     vertical-align: bottom;
-    width: 960px;
-    margin-bottom: 10px
+    width: 420px;
 }
 
 
@@ -154,17 +153,17 @@ nav li a:hover {
 
 #Toppost #lead {
     float: left;
-    width: 960px;
+    width: 219px;
     color: #ffffff;
-    margin-left: 25px;
+    margin-left: 17px;
 }
 
 #Toppost h2 {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 #Toppost.more {
-    font-size: 18px;
+    font-size: 9px;
     font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
     text-align: right;
 }
@@ -173,16 +172,106 @@ nav li a:hover {
 
 /* 用CSS寫按鈕!!!這邊先暫且依樣畫葫蘆，之後會教大家Bootstrap，就不用用CSS刻很久了*/
 
-#Toppost{
-    background-color: #444444
+#Toppost.more a {
+    color: #ffffff;
+    background-image: url(img/more.png);
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    display: block;
+    padding: 5px 20px 5px 0;
+    text-decoration: none;
 }
-
-
-
 
 
 /* 用CSS做漸層!!!這邊先暫且依樣畫葫蘆，之後會教大家Bootstrap，就不用用CSS刻很久了*/
 
+#Toppost {
+    background-color:#880000;
+    background: -webkit-gradient(linear, left top, left bottom, from(#8B0000), to(#D87093));
+    background: -webkit-linear-gradient(#8B0000 0%, #D87093 100%);
+    background: -moz-linear-gradient(#8B0000 0%, #D87093 100%);
+    background: -o-linear-gradient(#8B0000 0%, #D87093 100%);
+    background: -ms-linear-gradient(#8B0000 0%, #D87093 100%);
+    background: linear-gradient(#8B0000 0%, #D87093 100%);
+    overflow: hidden;
+}
+
+
+/* POST 圖文 */
+
+
+/* container設960，216x4+32x3=960 */
+
+.post {
+    float: left;
+    width: 216px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+
+/* .post:last-child 以後新增的post，只要是最後一個，右邊界皆為0 */
+
+.post: last-child {
+    margin-right: 0;
+}
+
+
+
+/* 每四個為一組的post，右邊界皆為0 */
+
+.post+.post+.post+.post {
+    margin-right: 0;
+}
+
+
+.post img {
+    width: 216px;
+    height: auto;
+    vertical-align: bottom;
+    border: none;
+}
+
+.post h2 {
+    font-size: 8px;
+    margin: 1px 0 0;
+}
+
+.post p {
+    font-size: 6px;
+    margin: 4px 0;
+}
+
+.post .data {
+    float: left;
+    margin: 0;
+}
+
+.post .more_s {
+    float: right;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Macen Pro', Helvetica, Arial, sans-serif;
+    background-color: #FFFFFF;
+    background-image: url(img/more.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: 94% 50%;
+    padding: 3px 25px 3px 5px;
+    margin: 0;
+}
+
+.post a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+}
+
+.post a:hover {
+    background-color:   #E6E6FA
+}
 
 
 
