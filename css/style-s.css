@@ -1,7 +1,7 @@
 /*####版面設計####*/
 
 body {
-	margin :10px 4px;
+	margin :4px 2px;
 	font-family: calibri light, '微軟正黑體', sans-serif;
     background-color:   #F5F5F5
 }
@@ -12,12 +12,12 @@ body {
 /*L-size bigger than980px; m-size 640~979px; s-size smaller than 639px*/
 
 #container{
-	width: 639px;
+	width: 300px;
 	margin: auto;
 }
 
 header {
-	margin-bottom: 5px;
+	margin-bottom: 2px;
 	overflow: hidden;
 }
 
@@ -28,17 +28,17 @@ header {
 /* overflow:hidden 將多的區塊隱藏，版面比較好看 */
 
 #Toppost{
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 	overflow: hidden;
 }
 
 #oldnews {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     overflow: hidden;
 }
 
 footer {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 
@@ -66,7 +66,7 @@ footer {
 
 #site img{
 	vertical-align: bottom;
-	width:250px;
+	width:150px;
 }
 
 
@@ -119,8 +119,8 @@ nav li {
 nav li a {
     display: block;
     float: left;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 2px;
+    margin-top: 2px;
     text-decoration: none;
     border-bottom: solid 1px transparent;
     color: #000000;
@@ -145,7 +145,7 @@ nav li a:hover {
 #Toppost img {
     float: left;
     vertical-align: bottom;
-    width: 420px;
+    width: 298px;
 }
 
 
@@ -153,13 +153,13 @@ nav li a:hover {
 
 #Toppost #lead {
     float: left;
-    width: 219px;
+    width: 298px;
     color: #ffffff;
-    margin-left: 17px;
+    margin-left: 5px;
 }
 
 #Toppost h2 {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 #Toppost.more {
@@ -175,11 +175,11 @@ nav li a:hover {
 #Toppost.more a {
     color: #ffffff;
     background-image: url(img/more.png);
-    background-size: 14px;
+    background-size: 5px;
     background-repeat: no-repeat;
     background-position: right center;
     display: block;
-    padding: 5px 20px 5px 0;
+    padding: 5px 5px 5px 0;
     text-decoration: none;
 }
 
